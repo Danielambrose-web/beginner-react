@@ -1,23 +1,14 @@
-// const Dan = {
-//   name: "Daniel Ambrose",
-//   age: 26,
-//   occupation: "Web Developer",
-// };
-// console.log(Dan.name);
-
 const Message = (props) => {
-  const { text } = props;
-  // console.log(props);
-  // return <div> hellll {text}</div>;
+  const { text, bgcolor } = props;
 
   return (
     <div
       style={{
-        background: "blue",
+        background: bgcolor,
         color: "white",
       }}
     >
-      hellll {text}
+      {text}
     </div>
   );
 };
@@ -25,7 +16,8 @@ const Message = (props) => {
 const App = () => {
   return (
     <>
-      <Message text="this is my first porp" />
+      <Message text="this is my first porp" bgcolor="green" />
+      <Message text="lawyer" bgcolor="blue" />
     </>
   );
 };
